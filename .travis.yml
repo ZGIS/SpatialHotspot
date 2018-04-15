@@ -1,0 +1,27 @@
+language: r
+warnings_are_errors: true
+sudo: required
+cache: packages
+dist: trusty
+
+matrix:
+    include:
+        - os: linux
+          r: release
+          env: R_CODECOV=true
+          #- os: linux
+          #r: devel
+          #dist: trusty
+        - os: linux
+          r: oldrel
+          dist: trusty
+        - os: osx
+          r: release
+          #- os: osx
+          #r: devel
+
+r_packages:
+      - covr
+
+after_success:
+      - Rscript -e 'library(covr); codecov()'
