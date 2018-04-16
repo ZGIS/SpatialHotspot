@@ -5,3 +5,4 @@
 [![codecov](https://codecov.io/gh/ZGIS/spatial-analysis/branch/master/graph/badge.svg)](https://codecov.io/gh/ZGIS/spatial-analysis)
 
 
+test
