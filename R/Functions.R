@@ -1,9 +1,9 @@
 #' Function read.data is reading the dataset to be used in the analysis
 #' @export 
-read.data <- function() {
+read.data <- function(fileName) {
   h <- here::here()
-  tweets <- file.path(h, "..","tweetdata", "file.csv")
-  return(rgdal::readOGR(tweets))
+  tweets <- file.path(h, "..","Resources", fileName)
+  return(rgdal::readOGR(as.data.frame(tweets)))
 }
 
 #' Calculate local Moran's I
