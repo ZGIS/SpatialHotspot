@@ -4,7 +4,7 @@
 \alias{read.data}
 \title{Function read.data is reading the dataset to be used in the analysis}
 \usage{
-read.data()
+read.data(fileName)
 }
 \description{
 Function read.data is reading the dataset to be used in the analysis

@@ -3,13 +3,13 @@
 read.data <- function(fileName) {
   h <- here::here()
   tweets <- file.path(h, "..","Resources", fileName)
-  return(rgdal::readOGR(as.data.frame(tweets)))
+  return(rgdal::readOGR(tweets, layers[1]))
 }
 
 #' Calculate local Moran's I
 #' @export 
-moranI <- function() {
-  return(spdep::localmoran(tweets, listw, zero.policy=NULL, na.action=na.fail, 
+moranI <- function(fileName) {
+  return(spdep::localmoran(fileName, listw, zero.policy=NULL, na.action=na.fail, 
                            alternative = "greater", p.adjust.method="none", mlvar=TRUE,
                            spChk=NULL))
 }
