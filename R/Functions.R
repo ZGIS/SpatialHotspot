@@ -3,7 +3,7 @@
 read.data <- function(fileName) {
   h <- here::here()
   tweets <- file.path(h, "..","Resources", fileName)
-  return(rgdal::readOGR(tweets, layers[1]))
+  return(rgdal::readOGR(tweets))
 }
 
 #' Calculate local Moran's I
@@ -20,5 +20,13 @@ getisOrd <- function() {
   print("getis-ord comes here")
 }
 
+
+#'Main
+#' @export 
+main <- function() {
+  tweets <- read.data("hurricane_harvey_tweets.gpkg")
+  #moranI(tweets)
+  #getisOrd(tweets)
+}
 
 
