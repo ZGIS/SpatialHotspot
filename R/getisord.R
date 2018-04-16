@@ -1,4 +1,3 @@
-
 #'Perform Getis-Ord
 #' @export 
 getisOrd <- function() {
