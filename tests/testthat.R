@@ -1,4 +1,4 @@
 library(testthat)
-library(spatialAnalysis)
+library(SpatialHotspot)
 
-test_check("spatialAnalysis")
+test_check("SpatialHotspot")
