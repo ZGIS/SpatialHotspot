@@ -3,10 +3,9 @@ Type: Package
 Title: Examples of importing data and performing various hot spot analysis methods
 Version: 0.1.0
 Authors@R: c(
-  person("Clemens", "Havas", email="clemensrudolf.havas@sbg.ac.at", role = "aut"),
+  person("Clemens", "Havas", email="clemensrudolf.havas@sbg.ac.at", role = c("aut", "cre")),
   person("Alina", "Ristea", email="alina.ristea@sbg.ac.at", role = "aut"),
-person("Helena", "Bergstedt", email="helena.bergstedt@sbg.ac.at", role = "aut")
-)
+  person("Helena", "Bergstedt", email="helena.bergstedt@sbg.ac.at", role = "aut"))
 Description: Gonna be great spatial analysis
 License: GPL-3
 Encoding: UTF-8
