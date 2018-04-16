@@ -1,4 +1,4 @@
 library(testthat)
-library(ChangeOfSupport)
+library(spatialAnalysis)
 
-test_check("ChangeOfSupport")
+test_check("spatialAnalysis")

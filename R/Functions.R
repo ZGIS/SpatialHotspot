@@ -29,4 +29,3 @@ main <- function() {
   #getisOrd(tweets)
 }
 
-
