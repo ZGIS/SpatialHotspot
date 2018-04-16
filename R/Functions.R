@@ -14,5 +14,11 @@ moranI <- function() {
                            spChk=NULL))
 }
 
+#'Perform Getis-Ord
+#' @export 
+getisOrd <- function() {
+  print("getis-ord comes here")
+}
+
 
 
