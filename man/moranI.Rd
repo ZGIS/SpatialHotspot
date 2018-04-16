@@ -6,6 +6,9 @@
 \usage{
 moranI(fileName)
 }
+\arguments{
+\item{fileName}{name of the file}
+}
 \description{
 Calculate local Moran's I
 }
