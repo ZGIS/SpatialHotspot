@@ -2,6 +2,6 @@
 #' @export 
 main <- function() {
   tweets <- read.data("hurricane_harvey_tweets.gpkg")
-  #moranI(tweets)
+  moranI(tweets)
   #getisOrd(tweets)
 }

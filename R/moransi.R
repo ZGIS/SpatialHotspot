@@ -1,9 +1,14 @@
 #' Calculate local Moran's I
-#' @param fileName name of the file
+
+#' @param tweets SpatialPointsDataFrame containing tweets
 #' @importFrom spdep localmoran 
 #' @export 
-moranI <- function(fileName) {
-  return(spdep::localmoran(fileName, listw, zero.policy=NULL, alternative = "greater", p.adjust.method="none", mlvar=TRUE, spChk=NULL))
+moranI <- function(tweets) {
+  
+  nb <- knn2nb(knearneigh(tweets_new))
+  listw <- nb2listw(nb)
+  
+  return(spdep::localmoran(as.numeric(as.vector(tweets$tweet_id)), listw, zero.policy=NULL, alternative = "greater", p.adjust.method="none", mlvar=TRUE, spChk=NULL))
 }
 
 
