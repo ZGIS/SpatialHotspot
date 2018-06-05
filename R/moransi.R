@@ -1,5 +1,4 @@
 #' Calculate local Moran's I
-
 #' @param tweets SpatialPointsDataFrame containing tweets
 #' @importFrom spdep localmoran 
 #' @export 
