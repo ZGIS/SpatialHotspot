@@ -4,10 +4,12 @@
 \alias{visualise}
 \title{Visualise - create map USA}
 \usage{
-visualise(referencedregion)
+visualise(referencedregion, tweets)
 }
 \arguments{
 \item{referencedregion}{area of interest}
+
+\item{tweets}{data to work with}
 }
 \description{
 Visualise - create map USA

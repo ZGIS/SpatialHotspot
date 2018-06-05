@@ -1,9 +1,10 @@
 #'Visualise - create map USA
 #' @param referencedregion area of interest
+#' @param tweets data to work with
 #' @import ggplot2 
 #' @export 
 #' 
-visualise <- function(referencedregion) {
+visualise <- function(referencedregion, tweets) {
 
   world_map <- ggplot2::map_data(referencedregion)
   p <- ggplot2::ggplot() + ggplot2::coord_fixed() + ggplot2::xlab("") + ggplot2::ylab("")
@@ -19,6 +20,9 @@ visualise <- function(referencedregion) {
           axis.text.y=ggplot2::element_blank())
   
   base_world <- base_world_messy + cleanup
+
+  map_test <- base_world + ggplot2::geom_point(data=data.frame(tweets), ggplot2::aes(x=long, y=lat), colour="Deep Pink", 
+               fill="Pink",pch=21, size=1, alpha=I(0.7))
   
-  base_world
+  map_test
 }
