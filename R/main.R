@@ -2,6 +2,7 @@
 #' @export 
 main <- function() {
   tweets <- read.data("hurricane_harvey_tweets.gpkg")
-  moranI(tweets)
-  #getisOrd(tweets)
+  tweets <- tweets[1:1000,]
+  zmoran <- moranI(tweets)
+  zgetis <- getisOrd(tweets)
 }
