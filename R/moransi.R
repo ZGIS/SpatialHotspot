@@ -1,5 +1,8 @@
 #' Calculate local Moran's I
 #' @param tweets SpatialPointsDataFrame containing tweets
+#' @param distance distance metrics
+#' @param d1 fixed distance minimum
+#' @param d2 fixed distance maximum
 #' @importFrom spdep localmoran 
 #' @export 
 moranI <- function(tweets, distance, d1, d2) {

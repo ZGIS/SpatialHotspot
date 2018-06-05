@@ -4,10 +4,16 @@
 \alias{moranI}
 \title{Calculate local Moran's I}
 \usage{
-moranI(tweets)
+moranI(tweets, distance, d1, d2)
 }
 \arguments{
 \item{tweets}{SpatialPointsDataFrame containing tweets}
+
+\item{distance}{distance metrics}
+
+\item{d1}{fixed distance minimum}
+
+\item{d2}{fixed distance maximum}
 }
 \description{
 Calculate local Moran's I

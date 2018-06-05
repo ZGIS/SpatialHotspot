@@ -4,10 +4,16 @@
 \alias{getisOrd}
 \title{Perform Getis-Ord}
 \usage{
-getisOrd(tweets)
+getisOrd(tweets, distance, d1, d2)
 }
 \arguments{
 \item{tweets}{data to be analyzed}
+
+\item{distance}{distance metrics}
+
+\item{d1}{fixed distance minimum}
+
+\item{d2}{fixed distance maximum}
 }
 \description{
 Perform Getis-Ord

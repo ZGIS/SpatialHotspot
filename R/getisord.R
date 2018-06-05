@@ -1,5 +1,8 @@
 #'Perform Getis-Ord
 #' @param tweets data to be analyzed
+#' @param distance distance metrics
+#' @param d1 fixed distance minimum
+#' @param d2 fixed distance maximum
 #' @importFrom spdep localG 
 #' @export 
 getisOrd <- function(tweets, distance, d1,d2) {
