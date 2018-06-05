@@ -5,4 +5,5 @@ main <- function() {
   tweets <- tweets[1:1000,]
   zmoran <- moranI(tweets)
   zgetis <- getisOrd(tweets)
+  visualise("usa")
 }
