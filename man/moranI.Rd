@@ -4,10 +4,10 @@
 \alias{moranI}
 \title{Calculate local Moran's I}
 \usage{
-moranI(fileName)
+moranI(tweets)
 }
 \arguments{
-\item{fileName}{name of the file}
+\item{tweets}{SpatialPointsDataFrame containing tweets}
 }
 \description{
 Calculate local Moran's I

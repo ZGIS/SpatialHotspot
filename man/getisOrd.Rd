@@ -4,7 +4,10 @@
 \alias{getisOrd}
 \title{Perform Getis-Ord}
 \usage{
-getisOrd()
+getisOrd(tweets)
+}
+\arguments{
+\item{tweets}{data to be analyzed}
 }
 \description{
 Perform Getis-Ord
